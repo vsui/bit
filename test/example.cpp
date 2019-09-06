@@ -1,7 +1,6 @@
 #include "bit.hpp"
 #include "gtest/gtest.h"
 #include <algorithm>
-#include <cstddef>
 #include <vector>
 
 TEST(IsPermutationTest, Simple) {
