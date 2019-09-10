@@ -35,7 +35,8 @@ endif()
 
 # Now simply link against gtest or gtest_main as needed. Eg
 add_executable(example example.cpp)
-target_link_libraries(example gtest_main)
+target_link_libraries(example gtest)
+target_link_libraries(example gmock)
 target_include_directories(example PRIVATE "${CMAKE_SOURCE_DIR}/../cpp")
 add_test(NAME example_test COMMAND example)
 
